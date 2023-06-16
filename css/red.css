@@ -1,0 +1,335 @@
+/* Theme Colors */
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --prime-color: #d72323;
+    --prime-text-color: #000000;
+    --second-text-color: #6d6969;
+    --prime-side-color: #f5eded;
+    --second-side-color: #3e3636;
+    --third-side-color: #FFF;
+}
+
+/* Here Goes The Layouts Everyone put a comment before their section*/
+
+/* Navigation */
+.navbar a{
+    border-bottom: 1px solid transparent;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: transparent;
+    border-color: var(--prime-color);
+}
+
+.dropdown .dropbtn {
+    border-bottom: 1px solid transparent;
+}
+
+.dropdown .dropbtn:hover {
+    border-color: var(--prime-color);
+}
+
+.navbar .active {
+    background-color: transparent;
+    color: var(--prime-text-color);
+    border-color: var(--prime-color);
+}
+
+/* About Us */
+.About .our-team .person{
+    position: relative;
+    margin: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.About .our-team .person:before {
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    top: -19px;
+    left: 0px;
+    border-radius: 50px;
+    background-color: var(--second-side-color);
+    z-index: -1;
+    box-shadow: 0px 0px 25px black;
+    transition: all ease-in-out 0.4s;
+}
+
+.About .our-team .person:after {
+    content: "";
+    position: absolute;
+    height: 220px;
+    width: 300px;
+    top: 137px;
+    left: 0px;
+    background-color: var(--third-side-color);
+    z-index: -1;
+    box-shadow: 0px 0px 25px black;
+    transition: all ease-in-out 0.3s;
+}
+
+.About .our-team .person:hover:after {
+    height: 200px;
+    width: 300px;
+    top: -19px;
+    left: 0px;
+    border-radius: 50px;
+    background-color: var(--second-side-color);
+    z-index: -2;
+    box-shadow: 0px 0px 25px black;
+}
+
+.About .our-team .person:hover:before {
+    border-radius: 0px;
+    height: 220px;
+    width: 300px;
+    top: 137px;
+    left: 0px;
+    background-color: var(--third-side-color);
+    z-index: -1;
+    box-shadow: 0px 0px 25px black;
+}
+
+.About .our-team .person:hover{
+    transform: scale(1.1);
+}
+
+.About .our-team .person img{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    box-shadow: 0px 0px 25px black;
+    border: 3px solid #FFF;
+}
+
+/* Search */
+.search{
+    margin-top: 3vw;
+    text-align: center;
+}
+ 
+.search .gamebox h3, .search .gamebox h4, .search .gamebox h5{
+    color: #FFF;
+    position: absolute;
+    bottom: 12px;
+    width: 100%;
+}
+.search .gamebox:hover{
+    box-shadow: 0 5px 15px #000;
+    transform: scale(1.1);
+}
+
+/* Login */
+
+.login{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    background: url(../images/need_for_speed_heat_video_game_2-wallpaper-1920x1080.jpg) no-repeat;
+    background-size: cover;
+}
+  
+.loginbox{
+    width: 450px;
+    height: 420px;
+    background: var(--third-side-color);
+    color: var(--second-text-color);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+  
+.loginbox .icon{
+    display: none;
+}
+  
+.loginbox h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: var(--prime-text-color);
+  }
+  
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+  
+.loginbox input{
+    height: 40px;
+    width: 362px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid silver;
+}
+  
+.loginbox input[type="text"], input[type="password"]{
+    height: 40px;
+    width: 362px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid silver;
+}
+  
+.loginbox input[type="submit"]{
+    margin: 45px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: var(--prime-color);
+    border-radius: 3px;
+    border: none;
+    transition: .5s;
+}
+  
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background-color:#ffc107;
+    border: white;
+}
+  
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--prime-text-color);
+}
+  
+.loginbox a:hover{
+    color: #ffc107;
+}
+  
+.login_form #email_error,
+.login_form #pass_error{
+    font-size: 18px;
+    margin: -20px 0 20px 0;
+    color: #C62828;
+    background: rgba(255,0,0,0.2);
+    text-align: center;
+    border: none;
+    border-bottom: 1px red #C62828;
+    display: none;
+}
+
+/* Register */
+
+.register{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    background: url(../images/watch_dogs_legion_game_2020-wallpaper-1920x1080.jpg) no-repeat;
+    background-size: cover;
+}
+  
+.register-box{
+    width: 450px;
+    height: 420px;
+    background: var(--third-side-color);
+    color: var(--second-text-color);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+  
+.register-box .icon{
+    display: none;
+}
+  
+.register-box h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: var(--prime-text-color);
+  }
+  
+.register-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+  
+.register-box input{
+    height: 40px;
+    width: 362px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid silver;
+}
+  
+.register-box input[type="text"], input[type="password"], input[type="email"]{
+    height: 40px;
+    width: 362px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid silver;
+}
+  
+.register-box input[type="submit"]{
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: var(--prime-color);
+    border-radius: 3px;
+    border: none;
+    transition: .5s;
+    margin: 0 0 0 0;
+}
+  
+.register-box input[type="submit"]:hover{
+    cursor: pointer;
+    background-color:#ffc107;
+    border: white;
+}
+  
+.register-box a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--prime-text-color);
+}
+  
+.register-box a:hover{
+    color: #ffc107;
+}
+  
+.register_form #email_error,
+.register_form #name_error,
+.register_form #pass_error{
+  font-size: 18px;
+  margin: -20px 0 20px 0;
+  color: #C62828;
+  background: rgba(255,0,0,0.2);
+  text-align: center;
+  border: none;
+  border-bottom: 1px red #C62828;
+  display: none;
+}

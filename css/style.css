@@ -1,0 +1,2574 @@
+/* Main Style*/
+
+body {
+  background-color: var(--prime-side-color);
+  color: var(--prime-text-color);
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+}
+
+.prime-color {
+  color: var(--prime-color)
+}
+
+/* Navbar */
+/* Add a background color to the top navigation */
+.navbar {
+  background-color: var(--third-side-color);
+  overflow: hidden;
+  clear: both;
+}
+
+
+/* Add an active class to highlight the current page */
+.navbar .active {
+  background-color: var(--prime-color);
+  color: #FFF;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: var(--second-text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hide the button that should open and close the navbar on small screens */
+.navbar .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Style the dropdown button to fit inside the navbar */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: var(--prime-text-color);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  background-color: var(--third-side-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: var(--second-text-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Add a dark background on navbar links and the dropdown button on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: var(--prime-side-color);
+  color: var(--prime-text-color);
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--prime-side-color);
+  color: var(--prime-text-color);
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar .theme {
+  position: fixed;
+  right: 0;
+  top: 30vh;
+  z-index: 9999;
+  background-color: var(--third-side-color);
+  border: 1px solid var(--prime-color);
+}
+
+/* When the screen is less than 850 pixels wide, hide all links, except for the Logo. Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 850px) {
+
+  .navbar a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+    font-size: 15px;
+  }
+
+  .navbar .theme {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 50vh;
+    border: none;
+  }
+}
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 850px) {
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .navbar.responsive .dropdown {
+    float: none;
+  }
+
+  .navbar.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .navbar.responsive .theme {
+    position: relative;
+    right: 0;
+    top: 0;
+    border: none;
+  }
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--third-side-color);
+  margin: 0;
+}
+
+/* About */
+
+.About {
+  text-align: center;
+}
+
+.About .our-team hr {
+  border-top: 4px solid var(--prime-color);
+  width: 25vw;
+  padding: 0;
+  margin: 35px 35%;
+}
+
+.About .header h1 {
+  border-left: 4px solid var(--prime-color);
+  padding: 0;
+  margin: 35px 22%;
+}
+
+.About .who h1 {
+  border-left: 4px solid var(--prime-color);
+  width: 22vw;
+  padding: 0;
+  margin: 35px 5%;
+}
+
+.About .header {
+  background-image: url("../images/destiny-2-cover.jpg");
+  background-size: cover;
+}
+
+.About .header .outlay {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFF;
+  padding: 10vw 0;
+}
+
+.About .who {
+  clear: both;
+  overflow: hidden;
+  height: 35vh;
+  padding: 9.1vw;
+  background: var(--third-side-color);
+}
+
+.About .who img {
+  float: left;
+  height: 35vh;
+}
+
+
+
+.About .who div {
+  width: 24vw;
+  float: right;
+  padding: 2vw 4vw;
+}
+
+.About .our-team .person {
+  width: 300px;
+  height: 400px;
+  display: inline-block;
+}
+
+.About .our-team .person img {
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 850px) {
+  .About .who {
+    height: 40vw;
+    padding: 9.1vw;
+    background: var(--third-side-color);
+    position: relative;
+  }
+
+  .About .who img {
+    width: 80vw;
+    height: 40vw;
+    position: relative;
+  }
+
+  .About .who div {
+    width: 80vw;
+    padding: 0vw 0vw;
+    top: 9vw;
+    left: 9.1vw;
+    position: absolute;
+    color: #fff;
+    height: 40vw;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .About .who h1 {
+    border-left: 4px solid var(--prime-color);
+    width: 35vw;
+    padding: 0;
+    margin: 35px 25%;
+    margin-top: 8vw;
+  }
+}
+
+/* Search */
+
+.search {
+  margin-top: 3vw;
+  text-align: center;
+}
+
+.search .searchholder {
+  position: relative;
+}
+
+.search .searchholder .fa-search {
+  position: absolute;
+  left: 12.5vw;
+  top: 2.1vw;
+  background-color: var(--prime-color);
+  padding: 1vw;
+  color: #FFF;
+  transition: all ease-in-out .2s;
+}
+
+.search .searchbox:focus+.fa-search {
+  background-color: var(--second-side-color);
+}
+
+.search .searchbox:focus {
+  box-shadow: 0 2px 10px #000;
+}
+
+.search .searchbox {
+  margin: 2vw;
+  padding: 1vw;
+  width: 50vw;
+  border: 2px solid #ddd;
+  padding-left: 4vw;
+}
+
+.search .gamebox {
+
+  margin: 1vw;
+  width: 230px;
+  height: 360px;
+  position: relative;
+  box-shadow: 0 2px 10px #000;
+  transition: all 0.3s ease-in-out;
+  background: var(--prime-color);
+}
+
+.search .gamebox h3,
+.search .gamebox h4,
+.search .gamebox h5,
+.search .gamebox a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.search .gamebox img {
+  position: relative;
+  width: 230px;
+  height: 300px;
+}
+
+.search .gamebox .tag {
+  display: none;
+}
+
+.search .gamebox p {
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 100%;
+  font-size: 18px;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.7);
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 850px) {
+  .search .searchholder .fa-search {
+    display: none;
+  }
+}
+
+/* Login */
+
+.login {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  background-image: url('../images/sephiroth_final_fantasy_vii_remake_video_game_2020-wallpaper-1920x1080.jpg');
+  background-size: cover;
+}
+
+.loginbox {
+  width: 320px;
+  height: 420px;
+  background: var(--third-side-color);
+  color: var(--second-text-color);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  margin-top: 15px;
+}
+
+.loginbox .icon {
+  border-radius: 50%;
+  position: absolute;
+  top: -41px;
+  left: calc(50% - 50px);
+  font-size: xxx-large;
+  background-color: var(--prime-color);
+  padding: 25px 30px;
+}
+
+.loginbox h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+  color: var(--prime-text-color);
+}
+
+.loginbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.loginbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid var(--second-text-color);
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: var(--second-text-color);
+  font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: var(--prime-color);
+  color: var(--prime-text-color);
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.loginbox a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--prime-text-color);
+}
+
+.loginbox a:hover {
+  color: #ffc107;
+}
+
+.login_form #email_error,
+.login_form #pass_error {
+  font-size: 18px;
+  margin: -20px 0 20px 0;
+  color: #C62828;
+  background: rgba(255, 0, 0, 0.2);
+  text-align: center;
+  border: none;
+  border-bottom: 1px red #C62828;
+  display: none;
+}
+
+/* register */
+
+.register {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  background-image: url('../images/lol_artwork-wallpaper-1920x1080.jpg');
+  background-size: cover;
+}
+
+.register-box {
+  width: 320px;
+  height: 420px;
+  background: var(--third-side-color);
+  color: var(--second-text-color);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  margin-top: 15px;
+}
+
+.register-box .icon {
+  border-radius: 50%;
+  position: absolute;
+  top: -41px;
+  left: calc(50% - 50px);
+  font-size: xxx-large;
+  background-color: var(--prime-color);
+  padding: 25px 30px;
+}
+
+.register-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+  color: var(--prime-text-color);
+}
+
+.register-box p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.register-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.register-box input[type="text"],
+input[type="password"],
+input[type="email"] {
+  border: none;
+  border-bottom: 1px solid var(--second-text-color);
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: var(--second-text-color);
+  font-size: 16px;
+}
+
+.register-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: var(--prime-color);
+  color: var(--prime-text-color);
+  font-size: 18px;
+  border-radius: 20px;
+  margin: 0 0 0 0;
+}
+
+.register-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.register-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--prime-text-color);
+}
+
+.register-box a:hover {
+  color: #ffc107;
+}
+
+.register_form #email_error,
+.register_form #name_error,
+.register_form #pass_error {
+  font-size: 18px;
+  margin: -20px 0 20px 0;
+  color: #C62828;
+  background: rgba(255, 0, 0, 0.2);
+  text-align: center;
+  border: none;
+  border-bottom: 1px red #C62828;
+  display: none;
+}
+
+/* Eslam Khaled's Home*/
+/* slideshow */
+.home {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.home .slide {
+  position: inherit;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  display: none;
+  padding: 0 15px;
+  animation: slide 2s ease;
+
+}
+
+.home .slide.active {
+  display: flex;
+
+}
+
+@keyframes slide {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container1 {
+  max-width: 1170px;
+  margin: auto;
+
+}
+
+.home .container1 {
+  flex-grow: 1;
+}
+
+.home .caption {
+  width: 50%;
+
+}
+
+.home .caption h1 {
+  font-size: 42px;
+  color: white;
+  margin: 0;
+
+}
+
+.home .slide.active .caption h1 {
+  opacity: 0;
+  animation: captionText .5s ease forwards;
+  animation-delay: 1s;
+}
+
+.home .caption p {
+  font-size: 16px;
+  margin: 15px 0 30px;
+  color: red;
+}
+
+.home .slide.active .caption p {
+  opacity: 0;
+  animation: captionText .5s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.home .caption a {
+  font-size: 20px;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: var(--prime-color);
+  text-decoration: none;
+  color: white;
+}
+
+.home .caption a:hover {
+  background-color: #fff;
+  color: var(--prime-color);
+}
+
+.home .slide.active .caption a {
+  opacity: 0;
+  animation: captionText .5s ease forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes captionText {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.home .controls .prev,
+.home .controls .next {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  background-color: var(--prime-color);
+  color: #FFF;
+  text-align: center;
+  line-height: 40px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.home .controls .prev:hover,
+.home .controls .next:hover {
+  background-color: #fff;
+  color: var(--prime-color);
+}
+
+.home .controls .prev {
+  left: 0;
+}
+
+.home .controls .next {
+  right: 0;
+}
+
+.home .indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.home .indicator div {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  color: var(--prime-color);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  margin: 50px 3px;
+}
+
+.home .indicator div.active {
+  background-color: var(--prime-color);
+}
+
+/* slideshow */
+
+
+
+
+
+
+/*latest games box */
+.home-container .container2 {
+  width: 91.3%;
+  padding: 10px;
+  background-color: var(--prime-color);
+
+  margin-left: 60px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.home-container .box {
+  width: 250px;
+  height: 300px;
+  color: white;
+  background: cover;
+  margin: 0px 10px;
+  transition: 4s;
+  text-align: center;
+  font-size: 20px;
+  text-decoration-line: none;
+
+
+}
+
+.home-container .box.a:hover {
+  color: var(--prime-color);
+  transform: scale(1.3);
+  background-image: url('../images/battlefield4.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+  ;
+}
+
+.home-container .box.a {
+  background-image: url('../images/battlefield4.jpg');
+
+}
+
+.home-container .box.b:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/battlefield1.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.b {
+  background-image: url('../images/battlefield1.jpg');
+
+}
+
+.home-container .box.c:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/anno1800.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.c {
+  background-image: url('../images/anno1800.jpg');
+  ;
+}
+
+.home-container .box.d:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/farcry5.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.d {
+  background-image: url('../images/farcry5.jpg');
+
+}
+
+.home-container .box.e:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/outlast2.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.e {
+  background-image: url('../images/outlast2.jpg');
+
+}
+
+.home-container .box.e1:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/aoe2.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.e1 {
+  background-image: url('../images/aoe2.jpg');
+
+}
+
+.home-container .abox {
+  font-size: 30px;
+  text-emphasis-color: white;
+  color: white;
+
+
+}
+
+/*latest games box */
+
+
+
+
+
+
+/*intro*/
+.home-container .container3 {
+  background-image: url('../images/clashgaming1.jpg');
+  background-repeat: no-repeat;
+  background: cover;
+  height: 350px;
+
+  padding-left: 150px;
+  width: 70vw;
+  margin: auto;
+}
+
+.home-container .des1 {
+  color: var(--prime-color);
+  padding-top: 40px;
+
+}
+
+.home-container .des2 {
+  color: white;
+  font-size: 25px;
+
+
+}
+
+.home-container .button {
+  background-color: var(--prime-color);
+  background-position: center;
+  color: white;
+  border: none;
+  outline: none;
+
+  font-size: 10px;
+  padding: 5px;
+
+}
+
+.home-container .button:hover {
+  background-color: #fff;
+  color: var(--prime-color);
+}
+
+.home-container #more {
+  display: none;
+}
+
+/* intro*/
+
+
+/*cant find search*/
+.home-container .container4 {
+  margin-top: 100px;
+  height: 250px;
+  background-image: url('../images/srch4.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.home-container .srh1 {
+
+  text-align: center;
+  padding-top: 20px;
+  font-size: 40px;
+  color: black;
+}
+
+.home-container .container4 .srh1 a {
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 10px 30px;
+  background-color: var(--prime-color);
+  text-decoration: none;
+  color: white;
+}
+
+.home-container .container4 .srh1 a:hover {
+  background-color: #fff;
+  color: var(--prime-color);
+}
+
+/*cant find search*/
+
+
+
+/*top free games*/
+.home-container .box.f:hover {
+  color: var(--prime-color);
+  transform: scale(1.3);
+  background-image: url('../images/fortnight.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+  ;
+}
+
+.home-container .box.f {
+  background-image: url('../images/fortnight.jpg');
+
+}
+
+.home-container .box.g:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/pubg.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.g {
+  background-image: url('../images/pubg.jpg');
+
+}
+
+.home-container .box.h:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/terraria.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.h {
+  background-image: url('../images/terraria.jpg');
+  ;
+}
+
+.home-container .box.i:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/thewalkingdead.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.i {
+  background-image: url('../images/thewalkingdead.jpg');
+
+}
+
+.home-container .box.j:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/dirtrally2.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.j {
+  background-image: url('../images/dirtrally2.jpg');
+
+}
+
+.home-container .container5 {
+  width: 90%;
+  padding: 20px;
+  background-color: var(--prime-color);
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.home-container .box.k:hover {
+  color: var(--prime-color);
+  transform: scale(1.3);
+  background-image: url('../images/carm.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+}
+
+.home-container .box.k {
+  background-image: url('../images/carm.jpg');
+}
+
+.home-container .box.l:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/sims4.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.l {
+  background-image: url('../images/sims4.jpg');
+
+}
+
+.home-container .box.m:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/eveo.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.m {
+  background-image: url('../images/eveo.jpg');
+  ;
+
+}
+
+.home-container .box.n:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/doom.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.n {
+  background-image: url('../images/doom.jpg');
+
+}
+
+.home-container .box.o:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/fallout.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.o {
+  background-image: url('../images/fallout.jpg');
+
+}
+
+/*top free games*/
+
+
+
+/* help boxes*/
+.home-container .container6 {
+  position: relative;
+  width: 1000px;
+  height: 200px;
+  margin-top: 30px;
+  margin-left: 240px;
+
+}
+
+.home-container .container6 .boxx {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.home-container .container6 .boxx .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--prime-color);
+  transition: 1s;
+  z-index: 1;
+}
+
+.home-container .container6 .boxx:hover .icon {
+  top: 10px;
+  left: 130px;
+  width: 40px;
+  height: 40px;
+
+}
+
+.home-container .container6 .boxx .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 1s;
+  color: white;
+
+}
+
+.home-container .container6 .boxx:hover .icon .fa {
+  font-size: 40px;
+
+}
+
+.home-container .container6 .boxx .content {
+  position: absolute;
+  top: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+.home-container .container6 .boxx:hover .content {
+  top: 30px;
+}
+
+.home-container .container6 .boxx .content h3 {
+  margin: 0;
+  padding: 0;
+  color: var(--prime-color);
+
+}
+
+.home-container .container6 .boxx .content p {
+  margin: 0;
+  padding: 0;
+  color: var(--prime-color);
+
+}
+
+/* help boxes*/
+
+
+
+
+
+/*mega sales*/
+.home-container .box.p:hover {
+  color: var(--prime-color);
+  transform: scale(1.3);
+  background-image: url('../images/battlefieldv.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+}
+
+.home-container .box.p {
+  background-image: url('../images/battlefieldv.jpg');
+
+}
+
+.home-container .box.q:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/thewitcher.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.q {
+  background-image: url('../images/thewitcher.jpg');
+
+}
+
+.home-container .box.r:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/apex.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.r {
+  background-image: url('../images/apex.jpg');
+  ;
+}
+
+.home-container .box.s:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/sniper.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.s {
+  background-image: url('../images/sniper.jpg');
+
+}
+
+.home-container .box.t:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/totalwar.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.t {
+  background-image: url('../images/totalwar.jpg');
+
+}
+
+.home-container .box.u:hover {
+  color: var(--prime-color);
+  transform: scale(1.3);
+  background-image: url('../images/slender.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+  ;
+}
+
+.home-container .box.u {
+  background-image: url('../images/slender.jpg');
+
+}
+
+.home-container .box.v:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/rust.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.v {
+  background-image: url('../images/rust.jpg');
+
+}
+
+.home-container .box.w:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/pcars.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.w {
+  background-image: url('../images/pcars.jpg');
+  ;
+}
+
+.home-container .box.x:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/res5.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.x {
+  background-image: url('../images/res5.jpg');
+
+}
+
+.home-container .box.y:hover {
+  transform: scale(1.3);
+  color: var(--prime-color);
+  background-image: url('../images/among.jpg');
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+.home-container .box.y {
+  background-image: url('../images/among.jpg');
+
+}
+
+.home-container .container7 .box.p .sale,
+.home-container .container7 .box.q .sale,
+.home-container .container7 .box.r .sale,
+.home-container .container7 .box.s .sale,
+.home-container .container7 .box.t .sale {
+  margin-top: 250px;
+
+}
+
+.home-container .container7 .box.p .sale2,
+.home-container .container7 .box.q .sale2,
+.home-container .container7 .box.r .sale2,
+.home-container .container7 .box.s .sale2,
+.home-container .container7 .box.t .sale2 {
+  text-decoration: line-through;
+  margin-left: 30px;
+}
+
+.home-container .container8 .box.u .sale3,
+.home-container .container8 .box.v .sale3,
+.home-container .container8 .box.w .sale3,
+.home-container .container8 .box.x .sale3,
+.home-container .container8 .box.y .sale3 {
+  margin-top: 250px;
+}
+
+.home-container .container8 .box.u .sale4,
+.home-container .container8 .box.v .sale4,
+.home-container .container8 .box.w .sale4,
+.home-container .container8 .box.x .sale4,
+.home-container .container8 .box.y .sale4 {
+  text-decoration: line-through;
+  margin-left: 30px;
+}
+
+.home-container .container7,
+.home-container .container8 {
+  width: 90%;
+  padding: 10px;
+  background-color: var(--prime-color);
+  margin-left: 60px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
+/*mega sales*/
+
+/* Zombie Games */
+/* start: zombie games styles */
+#zombies h1 {
+  line-height: 1.5;
+  font-weight: 300;
+  margin: 0.5em 0;
+  font-size: 2.5em;
+}
+
+#zombies p {
+  line-height: 2;
+  font-size: 0.85em;
+  font-weight: 300;
+  margin-bottom: 100px;
+}
+
+#zombies .flex {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto 100px;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+#zombies .badge {
+  padding: 9px 20px;
+  color: #eee;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+#zombies .badge.one,
+#zombies .badge.two,
+#zombies .badge.three {
+  background-color: var(--prime-color);
+}
+
+#zombies {
+  background: url('https://onclickwebdesign.com/wp-content/uploads/recent_games_bg.png') top center fixed;
+  background-color: #eef2f6;
+  border-top: 1px solid #d6dee7;
+  border-bottom: 1px solid #d6dee7;
+  padding: 70px 0 120px;
+}
+
+#zombies h1 {
+  text-align: center;
+  color: #000;
+}
+
+#zombies .box {
+  position: relative;
+  flex-basis: 31%;
+  background-color: #fff;
+  height: 844px;
+  padding: 80px auto;
+}
+
+#zombies .box:hover {
+  position: relative;
+  flex-basis: 31%;
+  background-color: #fff;
+  border-radius: 55px;
+  box-shadow: 14px 10px #8080808f;
+  height: 844px;
+  padding: 80px auto;
+}
+
+#zombies .box .badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+#zombies .box img {
+  width: 100%;
+  height: 70%;
+}
+
+#zombies .box img:hover {
+  border-radius: 55px;
+}
+
+#zombies .box .box-lower-section {
+  padding: 20px;
+}
+
+#zombies .box .box-lower-section p {
+  color: #999;
+}
+
+#zombies .box .box-lower-section a {
+  color: #999;
+  font-size: 0.8em;
+}
+
+/* end: zombie games styles */
+
+
+/* FAQ */
+
+.FAQ .wrapper * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: inherit;
+  font-family: "Rubik";
+  background: var(--third-side-color);
+}
+
+.FAQ .wrapper {
+  max-width: 425px;
+  width: 100%;
+  margin: 60px auto;
+
+}
+
+.FAQ .accordion_container {
+  width: 100%;
+  background: #283042;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.125);
+}
+
+.FAQ .accordion_container .accordion_header {
+  background: var(--prime-color);
+  padding: 35px 15px;
+  height: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.125);
+}
+
+.FAQ .accordion_container .accordion_body {
+  padding: 20px 25px;
+  height: calc(550px-100px);
+  overflow: auto;
+}
+
+.FAQ .accordion_body ul {
+  padding: 0;
+}
+
+.FAQ .accordion_body ul li {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0px 25px;
+  margin-bottom: 10px;
+  height: 60px;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+.FAQ .accordion_body ul li:last-child {
+  border-bottom: 0;
+}
+
+.FAQ .accordion_body ul li .li_qus {
+  color: var(--prime-color);
+  cursor: pointer;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FAQ .accordion_body ul li .li_qus p {
+  width: 250px;
+}
+
+.FAQ .accordion_body ul li .li_qus .btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--prime-color);
+  position: relative
+}
+
+.FAQ .accordion_body ul li .li_qus .btn:before,
+.FAQ .accordion_body ul li .li_qus .btn:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 8px;
+  width: 15px;
+  height: 2px;
+  background: #fff;
+  transition: all ease-in-out 0.1s;
+}
+
+.FAQ .accordion_body ul li .li_qus .btn:after {
+  transform: rotate(90deg);
+}
+
+.FAQ .accordion_body ul li .li_ans {
+  padding: 10px 0;
+  height: 500px;
+  padding-left: 40px;
+  font-size: 14px;
+  line-height: 21px;
+  transition: height 0.3s ease;
+}
+
+.FAQ .accordion_body ul li a {
+  color: var(--prime-color);
+}
+
+.FAQ .accordion_body ul li.active {
+  height: 260px;
+}
+
+.FAQ .accordion_body ul li.active .li_ans {
+  height: 200px;
+}
+
+
+
+.FAQ .accordion_body ul li.active .li_qus .btn:after {
+  transform: rotate(0deg);
+}
+
+.FAQ .li_ans {
+  color: var(--prime-text-color);
+}
+
+/* contact us */
+
+.contact {
+  text-align: center;
+}
+
+.contact .header {
+  width: 100vw;
+  background-image: url(../images/NetherUpdateMinecraft.png);
+  margin: 0;
+  background-size: cover;
+  color: #FFF;
+  padding: 0;
+}
+
+.contact .header .overlay {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 15vw 0;
+}
+
+.contact .contacts {
+  width: 100vw;
+  margin: 0;
+  padding: 5vw 0;
+  background-color: var(--third-side-color);
+}
+
+.contact h1,
+.contact h2 {
+  padding-bottom: 3vw;
+}
+
+.contact span {
+  color: var(--second-text-color);
+}
+
+.contact .social {
+  width: 100vw;
+  margin: 0;
+  padding: 5vw 0;
+}
+
+.contact .social .fa {
+  color: #FFF;
+  padding: 20px;
+  font-size: 30px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px -10px;
+  margin-top: 15px;
+  border-radius: 50%;
+  transform: scale(0.7);
+}
+
+.contact .social .fa:hover {
+  opacity: 0.7;
+}
+
+.contact .social .fa-facebook {
+  background: #3B5998;
+}
+
+.contact .social .fa-twitter {
+  background: #55ACEE;
+}
+
+.contact .social .fa-youtube-play {
+  background: #bb0000;
+}
+
+.contact .social .fa-google {
+  background: #dd4b39;
+}
+
+.contact .social .fa-instagram {
+  background: #125688;
+}
+
+.contact .social .fa-linkedin {
+  background: #007bb5;
+}
+
+.contact .complaint {
+  width: 100vw;
+  background: url("../images/dying-light-2-cover.jpg");
+  margin: 0;
+  background-size: cover;
+  color: #FFF;
+  padding: 0;
+}
+
+.contact .complaint .overlay {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 10vw 0;
+}
+
+.contact .complaint p {
+  margin-bottom: 30px;
+}
+
+.contact .complaint a {
+  text-decoration: none;
+  background: var(--prime-color);
+  color: #FFF;
+  padding: 14px 28px;
+  border: 2px solid var(--prime-color);
+  border-radius: 25px;
+  margin-top: 10px;
+  transition: all ease-in-out 0.3s;
+}
+
+.contact .complaint a:hover {
+  background: #FFF;
+  color: var(--prime-color);
+}
+
+/* Complaints */
+
+.complaints {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.complaints .rules {
+  width: 48%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.complaints .complain {
+  width: 48%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.complaints .complain input {
+  width: 300px;
+  display: block;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.complaints .complain .message {
+  width: 300px;
+  height: 100px;
+  display: block;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.complaints .complain .btn {
+  width: 344px;
+  display: block;
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* Multiplayer Games */
+/* slideshow */
+.multiplayer .slideshow {
+  overflow: hidden;
+  position: inherit;
+  width: 70%;
+  padding-left: 225px;
+  padding-bottom: 10px;
+}
+
+.multiplayer .slideshow .slide {
+  position: inherit;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  display: none;
+  padding: 50px 15px;
+  animation: slide 2s ease;
+
+}
+
+.multiplayer .slideshow .slide.active {
+  display: flex;
+
+}
+
+@keyframes slide {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.multiplayer .container1 {
+  max-width: 1170px;
+  margin: auto;
+
+}
+
+.multiplayer .slideshow .container1 {
+  flex-grow: 1;
+}
+
+.multiplayer .slideshow .caption {
+  width: 50%;
+  padding-left: 80px;
+
+}
+
+.multiplayer .slideshow .caption h1 {
+  font-size: 42px;
+  color: white;
+  margin: 0;
+
+}
+
+.multiplayer .slideshow .slide.active .caption h1 {
+  opacity: 0;
+  animation: captionText .5s ease forwards;
+  animation-delay: 1s;
+}
+
+
+
+
+@keyframes captionText {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.multiplayer .slideshow .controls .prev,
+.multiplayer .slideshow .controls .next {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  background-color: var(--prime-color);
+  text-align: center;
+  line-height: 40px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.multiplayer .slideshow .controls .prev:hover,
+.multiplayer .slideshow .controls .next:hover {
+  background-color: #fff;
+  color: var(--prime-color);
+}
+
+.multiplayer .slideshow .controls .prev {
+  left: 250px;
+}
+
+.multiplayer .slideshow .controls .next {
+  right: 250px;
+}
+
+.multiplayer .slideshow .indicator {
+  position: absolute;
+  left: 50%;
+  top: 350px;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.multiplayer .slideshow .indicator div {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  color: var(--prime-color);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  margin: 50px 3px;
+}
+
+.multiplayer .slideshow .indicator div.active {
+  background-color: var(--prime-color);
+}
+
+/* slideshow */
+
+
+
+
+
+.multiplayer .container5 {
+
+  display: flex;
+  width: 1300px;
+  position: relative;
+  justify-content: space-between;
+  margin-left: 100px;
+
+}
+
+.multiplayer .container5 .card {
+  position: relative;
+}
+
+.multiplayer .container5 .card .face {
+  width: 300px;
+  height: 400px;
+  transition: 0.5s;
+}
+
+.multiplayer .container5 .card .face.face1 {
+  position: relative;
+  background-color: var(--prime-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(200px);
+}
+
+.multiplayer .container5 .card:hover .face.face1 {
+  transform: translateY(0);
+}
+
+.multiplayer .container5 .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px;
+  transform: translateY(-200px);
+}
+
+.multiplayer .container5 .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.multiplayer .container5 .card .face.face2 p {
+  margin: 0;
+  padding: 0;
+
+}
+
+.multiplayer .container5 .card .face.face1 .content {
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.multiplayer .container5 .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.multiplayer .container5 .card .face.face1 .content img {
+  width: 250px;
+  height: 270px;
+
+}
+
+.multiplayer .container5 .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+
+}
+
+
+
+
+
+.multiplayer .container6 {
+
+  display: flex;
+  width: 650px;
+  position: relative;
+  justify-content: space-between;
+  margin-left: 430px;
+}
+
+.multiplayer .container6 .card {
+  position: relative;
+
+}
+
+.multiplayer .container6 .card .face {
+  width: 300px;
+  height: 400px;
+  transition: 0.5s;
+
+}
+
+.multiplayer .container6 .card .face.face1 {
+  position: relative;
+  background-color: var(--prime-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(200px);
+}
+
+.multiplayer .container6 .card:hover .face.face1 {
+  transform: translateY(0);
+}
+
+.multiplayer .container6 .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px;
+  transform: translateY(-200px);
+}
+
+.multiplayer .container6 .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.multiplayer .container6 .card .face.face2 p {
+  margin: 0;
+  padding: 0;
+
+}
+
+.multiplayer .container6 .card .face.face1 .content {
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.multiplayer .container6 .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.multiplayer .container6 .card .face.face1 .content img {
+  width: 250px;
+  height: 270px;
+
+}
+
+.multiplayer .container6 .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+
+}
+
+/* Complaints */
+
+.complaints {
+  background: url('../images/maxresdefault%5B5%5D.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 115vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.complaints .container1 {
+  position: relative;
+  width: 400px;
+  background: var(--third-side-color);
+  padding: 60px 40px;
+  color: var(--prime-text-color);
+}
+
+.complaints .header {
+  font-size: 40px;
+  margin-bottom: 60px;
+  align-items: center;
+  background: var(--third-side-color);
+}
+
+.complaints .input-field {
+  margin: 25px 0;
+  position: relative;
+  height: 50px;
+  width: 100%
+}
+
+.complaints .input-field input,
+.complaints .input-field textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--second-side-color);
+  padding-left: 15px;
+  outline: none;
+  font-size: 19px;
+  transition: .4s;
+  background-color: var(--prime-side-color);
+  color: var(--prime-text-color);
+}
+
+.complaints input:focus,
+.complaints .input-field textarea:focus {
+  border: 1px solid var(--prime-color);
+}
+
+.complaints .input-field label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--second-text-color);
+  font-size: 18px;
+  transition: .4s;
+}
+
+.complaints input:focus~label,
+.complaints input:valid~label,
+.complaints .input-field textarea:focus~label,
+.complaints .input-field textarea:valid~label {
+  transform: translateY(-33px);
+  background: var(--prime-side-color);
+  font-size: 16px;
+  color: var(--prime-color);
+
+}
+
+.complaints .input-field textarea {
+  padding-top: 10px;
+}
+
+.complaints .btn-field {
+  margin-top: 100px;
+}
+
+.complaints .btn-field input {
+  display: block;
+  margin-top: 15px;
+  padding: 20px 0;
+  width: 420px;
+  background-color: var(--prime-color);
+  border: 2px solid var(--prime-color);
+  color: #FFF;
+  transition: all ease-in-out 0.3s;
+}
+
+.complaints .btn-field input:hover {
+  background-color: #FFF;
+  border: 2px solid var(--prime-color);
+  color: var(--prime-color);
+}
+
+/* Simulation Games */
+.simulation {
+  text-align: center;
+}
+
+.simulation .container2 {
+  position: relative;
+  width: 300px;
+  height: 550px;
+  margin: 50px 45px;
+  display: inline-block;
+}
+
+.simulation .card {
+  position: absolute;
+  height: 100%;
+  width: 300px;
+  transform-style: preserve-3d;
+  transition: all 1.5s ease;
+  box-shadow: 0 20px 50px black;
+}
+
+.simulation .card:hover {
+  transform: rotateY(180deg);
+}
+
+.simulation .front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: var(--prime-color);
+  color: white;
+}
+
+.simulation .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: var(--prime-color);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.simulation .container2 .card .front img {
+  height: 510px;
+  width: 300px;
+}
+
+.simulation .container2 .card .front p {
+  text-align: center;
+
+}
+
+.simulation .container2 .card .back p {
+  max-width: 300px;
+  margin: 25px;
+}
+
+.simulation .container2 .card .back p {
+  margin: 25px;
+}
+
+/* Racing Games */
+.racing .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.racing .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+  background-color: var(--third-side-color);
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.racing .imgBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 6px solid #ddd;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  padding: 20px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.racing .card:nth-child(1) .imgBx {
+  background-image: url(../images/forzahorizon4.png);
+}
+
+.racing .card:nth-child(2) .imgBx {
+  background-image: url(../images/projectcars2.jpg);
+}
+
+.racing .card:nth-child(3) .imgBx {
+  background-image: url(../images/dirtrally.jpg);
+}
+
+.racing .card:nth-child(4) .imgBx {
+  background-image: url(../images/F1-2019-PC-Version-Full-Game-Setup-Free-Download.png);
+}
+
+.racing .card:nth-child(5) .imgBx {
+  background-image: url(../images/downloadfile.jpg);
+}
+
+.racing .card:nth-child(6) .imgBx {
+  background-image: url(../images/Team%20Sonic%20Racing.jpeg);
+}
+
+.racing .card:nth-child(7) .imgBx {
+  background-image: url(../images/gm433-1-min.jpg);
+}
+
+.racing .card:nth-child(8) .imgBx {
+  background-image: url(../images/Split%20Second%20Velocity.jpg);
+}
+
+.racing .card:nth-child(9) .imgBx {
+  background-image: url(../images/3L2ieAD_390x400_1x-0.jpg);
+}
+
+.racing .card:nth-child(10) .imgBx {
+  background-image: url(../images/1654.jpg);
+}
+
+.racing .card:nth-child(11) .imgBx {
+  background-image: url(../images/71JrxNU_390x400_1x-0-3.jpg);
+}
+
+.racing .card:nth-child(12) .imgBx {
+  background-image: url(../images/need-for-speed-rivals-cover.jpg);
+}
+
+.racing .card:nth-child(13) .imgBx {
+  background-image: url(../images/dirt%204.jpeg);
+}
+
+.racing .card:nth-child(14) .imgBx {
+  background-image: url(../images/Dirt%203.jpg);
+}
+
+.racing .card:nth-child(15) .imgBx {
+  background-image: url(../images/grid-2-cover.jpg);
+}
+
+.racing .card:nth-child(16) .imgBx {
+  background-image: url(../images/713ie-Hl2mL._SY445_.jpg);
+}
+
+.racing .card:nth-child(17) .imgBx {
+  background-image: url(../images/need-for-speed-payback-cover-1.jpg);
+}
+
+.racing .card:nth-child(18) .imgBx {
+  background-image: url(../images/dirtrally2.jpeg);
+}
+
+.racing .card:nth-child(19) .imgBx {
+  background-image: url(../images/projectcars.jpg);
+}
+
+.racing .header-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.racing .img-text {
+  font-family: Poppins;
+  padding-top: 20px;
+}
+
+.racing .img-text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.racing .card:hover {
+  background: var(--prime-color);
+  color: #fff;
+}
+
+.racing h1 {
+  font-size: 30px;
+  color: var(--prime-color);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+/* Shooter Games */
+
+.shooter {
+  text-align: center;
+}
+
+.shooter img[alt="calltwo"] {
+  width: 300px;
+  height: 400px;
+}
+
+.shooter img[alt="gtav"] {
+  width: 300px;
+  height: 400px;
+
+}
+
+.shooter img[alt="farfour"] {
+  width: 300px;
+  height: 400px;
+}
+
+.shooter h1 {
+  text-align: center;
+  color: var(--prime-color);
+  font-weight: bolder;
+  margin: 15px;
+}
+
+.shooter .gamecontainer {
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 15px rgba(0, 0, 0, .5);
+  border-radius: 15px
+}
+
+.shooter .gamecontainer:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .5)
+}
+
+.shooter .gamecontainer .card {
+  position: relative;
+  max-width: 1100px;
+  background: var(--third-side-color);
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+}
+
+.shooter .gamecontainer .card .imgbx {
+  max-width: 150px;
+  flex: 0 0 150px;
+}
+
+.shooter .gamecontainer .card .imgbx .img {
+  max-width: 100%;
+}
+
+.shooter .gamecontainer .card .content {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.shooter .gamecontainer .card .content a {
+  color: var(--prime-color);
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+/* Survival Games */
+
+.survival {
+  text-align: center;
+}
+
+.survival #SLIDE_BG {
+  position: fixed;
+  width: 1227px;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  backface-visibility: hidden;
+  animation: slidebg 8s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+  background-image: url(../images/img.jpg);
+}
+
+@keyframes slidebg {
+  0% {
+    background-image: url('../images/img.jpg');
+  }
+
+  25% {
+    background-image: url('../images/dayz.jpg');
+  }
+
+  50% {
+    background-image: url('../images/greenhell.jpg');
+  }
+
+  75% {
+    background-image: url('../images/Mine.jpg');
+  }
+
+  100% {
+    background-image: url('../images/oxygen.jpg')
+  }
+}
+
+.survival section {
+  border: 3px solid var(--second-side-color);
+  height: 90vh;
+  position: relative;
+  padding: 5px
+}
+
+.survival .gamecontainer {
+  border: 3px solid var(--second-side-color);
+  max-width: 1000px;
+  width: 770px;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: var(--third-side-color);
+}
+
+.survival .gamecontainer .card .content {
+  margin: 20px;
+  font-size: 20px;
+  position: top;
+}
+
+.survival .gamecontainer .card .content a {
+  color: var(--prime-color);
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.survival .gamecontainer .card .content p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}

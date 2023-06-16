@@ -1,0 +1,262 @@
+/* Theme Colors */
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --prime-color: #288ACC;
+    --prime-text-color: #000000;
+    --second-text-color: #6d6969;
+    --prime-side-color: #e3e6e8;
+    --second-side-color: #3e3636;
+    --third-side-color: #FFF;
+}
+
+/* Here Goes The Layouts Everyone put a comment before their section*/
+
+/* About Us */
+.About .our-team .person{
+    position: relative;
+    margin: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.About .our-team .person:before {
+    content: "";
+    position: absolute;
+    height: 250px;
+    width: 300px;
+    top: -19px;
+    left: 0px;
+    border-radius: 50px;
+    background-color: var(--second-side-color);
+    z-index: -1;
+    box-shadow: 0px 0px 25px black;
+    background: url("../images/no%20mans%20sky-cover.jpg");
+    background-size: contain;
+    transition: all ease-in-out 0.4s;
+}
+
+.About .our-team .person:hover:before {
+    border-radius: 25px;
+    background: url("../images/Terraria-Final-Update-.jpg");
+    background-size: contain;
+}
+
+.About .our-team .person:after {
+    content: "";
+    position: absolute;
+    height: 220px;
+    width: 300px;
+    top: 137px;
+    left: 0px;
+    background-color: var(--third-side-color);
+    z-index: -1;
+    box-shadow: 0px 0px 25px black;
+    transform: skewY(-12deg);
+    transition: all ease-in-out 0.3s;
+}
+
+.About .our-team .person:hover:after {
+    transform: skewY(12deg);
+}
+
+.About .our-team .person img{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    box-shadow: 0px 0px 25px black;
+    border: 3px solid #FFF;
+}
+
+/* Search */
+.search .gamebox:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px #000;
+}
+
+.search .gamebox h3, .search .gamebox h4, .search .gamebox h5{
+    text-decoration: none;
+    border-bottom: none;
+}
+
+/* Login */
+
+.login{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    background-image: url('../images/battlefield_v_game-wallpaper-1920x1080.jpg');
+    background-size: cover;
+}
+  
+.loginbox{
+    width: 360px;
+    padding: 10% 0 0;
+    background: rgba(31, 147, 214, 0.8) ;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    height: 330px;
+}
+  
+.loginbox .icon{
+    display: none;
+}
+  
+.loginbox h1{
+    display: none;
+}
+  
+.loginbox p{
+    display: none;
+}
+  
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+.loginbox input[type="text"], input[type="password"]{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 15px 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px
+}
+  
+.loginbox input[type="submit"]{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 15px 0 15px;
+}
+  
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #43A047;
+}
+  
+.loginbox a{
+    color: #FFF;
+    text-decoration: none;
+}
+  
+.loginbox a:hover{
+    color: #ffc107;
+}
+  
+.login_form #email_error,
+.login_form #pass_error{
+    font-size: 18px;
+    margin: -20px 0 20px 0;
+    color: #C62828;
+    background: rgba(255,0,0,0.2);
+    text-align: center;
+    border: none;
+    border-bottom: 1px red #C62828;
+    display: none;
+  }
+
+/* Register */
+
+.register{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    background-image: url('../images/valkyrie_fortnite-wallpaper-1920x1080.jpg');
+    background-size: cover;
+}
+  
+.register-box{
+    width: 360px;
+    padding: 10% 0 0;
+    background: rgba(31, 147, 214, 0.8) ;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    height: 330px;
+}
+  
+.register-box .icon{
+    display: none;
+}
+  
+.register-box h1{
+    display: none;
+}
+  
+.register-box p{
+    display: none;
+}
+  
+.register-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+.register-box input[type="text"], input[type="password"], input[type="email"]{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 15px 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px
+}
+  
+.register-box input[type="submit"]{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 0 0 0;
+}
+  
+.register-box input[type="submit"]:hover{
+    cursor: pointer;
+    background: #43A047;
+}
+  
+.register-box a{
+    color: #FFF;
+    text-decoration: none;
+}
+  
+.register-box a:hover{
+    color: #ffc107;
+}
+  
+.register_form #email_error,
+.register_form #name_error,
+.register_form #pass_error{
+  font-size: 18px;
+  margin: -20px 0 20px 0;
+  color: #C62828;
+  background: rgba(255,0,0,0.2);
+  text-align: center;
+  border: none;
+  border-bottom: 1px red #C62828;
+  display: none;
+}

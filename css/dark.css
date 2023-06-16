@@ -1,0 +1,563 @@
+/* Theme Colors */
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --prime-color: #ED8316;
+    --prime-text-color: #f2f2f2;
+    --second-text-color: #d2d2d2;
+    --prime-side-color: #555;
+    --second-side-color: #3e3636;
+    --third-side-color: #333;
+}
+
+/* Here Goes The Layouts Everyone put a comment before their section*/
+
+/* Navigation */
+.navbar a {
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.dropdown .dropbtn {
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* About Us */
+.About .our-team .person {
+    margin: 30px;
+    position: relative;
+    margin: 15px;
+    position: relative;
+    transform: scale(.9);
+}
+
+.About .our-team .person:before {
+    content: "";
+    background: var(--third-side-color);
+    top: 150px;
+    left: 0px;
+    width: 300px;
+    height: 260px;
+    position: absolute;
+    z-index: -1;
+}
+
+.About .our-team .person:after {
+    content: "";
+    background: var(--second-side-color);
+    top: 130px;
+    left: 20px;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(45deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.About .our-team .person:hover:after {
+    transform: rotate(180deg);
+}
+
+.About .our-team .person img {
+    border-radius: 150px;
+}
+
+.About .our-team{
+    margin-bottom: 20px;
+}
+
+/* Search */
+.search .searchbox {
+    border: 2px solid var(--prime-text-color);
+    border-radius: 25px;
+}
+
+.search .gamebox {
+    display: inline-block;
+    margin: 1vw;
+    width: 230px;
+    height: 360px;
+    position: relative;
+    box-shadow: 0 2px 10px #000;
+    transition: all 0.3s ease-in-out;
+    background: var(--prime-color);
+}
+
+.search .searchholder .fa-search{
+    border-radius: 25px;
+  }
+
+.search .gamebox h3, .search .gamebox h4, .search .gamebox h5 {
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+}
+
+.search .gamebox p {
+    bottom: 179px;
+    left: -138px;
+    width: 131%;
+    transform: rotate(90deg);
+}
+
+.search .gamebox:hover{
+    box-shadow: 0 5px 15px #000;
+    transform: scale(1.1);
+}
+
+.search .searchbox:focus {
+    border-radius: 25px;
+}
+
+
+/* Eslam Khaled's Home */
+.home .caption a{
+    font-size:20px;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--prime-color);
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+}
+/*slideshow*/
+.home{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 200px;
+}
+
+
+.home .controls .prev,
+.home .controls .next{
+    position:absolute;
+    z-index: 2;
+    top:50%;
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+   background-color: var(--prime-color);
+   
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 25px;
+}
+
+/*slideshow*/
+
+
+/*intro*/
+.container3{
+    background-image: url('../images/clashgaming1.jpg');
+    background-repeat: no-repeat;
+    background: cover;
+    height: 400px;
+    padding-left: 150px;
+    width: 70vw;
+    margin: auto;
+    border-radius: 50px;
+}
+.des2{
+    color:white;
+    
+}
+.button{
+     background-color: var(--prime-color);
+    color: white;
+    border: none;
+    outline: none;
+    
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 25px;
+}
+/*intro*/
+
+
+
+
+
+/*game box */
+.container2{
+    
+    border-radius: 50px;
+}
+.box.a:hover{
+   
+    border-radius: 50px;
+}
+.box.a{
+    
+    border-radius: 50px;
+}
+.box.b:hover{
+    
+    border-radius: 50px;
+}
+.box.b{
+   
+    border-radius: 50px;
+}
+.box.c:hover{
+    
+    border-radius: 50px;
+}
+.box.c{
+    
+    border-radius: 50px;
+}
+.box.d:hover{
+    
+    border-radius: 50px;
+}
+.box.d{
+   
+    border-radius: 50px;
+}
+.box.e:hover{
+    border-radius: 50px;
+}
+.box.e{
+    
+    border-radius: 50px;
+}
+.box.e1:hover{
+    
+     border-radius: 50px;
+   
+}
+.box.e1{
+   
+     border-radius: 50px;
+}
+
+.abox{
+    font-size: 30px;
+    text-emphasis-color: white;
+    color: white;
+    transition: 2s;
+    border-radius: 50px;
+}
+/*game box */
+
+
+
+/*top free */
+
+.box.f:hover{
+   
+     border-radius: 50px;
+   
+}
+.box.f{
+    
+     border-radius: 50px;
+    
+}
+.box.g:hover{
+    
+     border-radius: 50px;
+    
+}
+.box.g{
+   
+     border-radius: 50px;
+    
+}
+.box.h:hover{
+   
+     border-radius: 50px;
+    
+}
+.box.h{
+    
+    border-radius: 50px;
+}
+.box.i:hover{
+    
+     border-radius: 50px;
+    
+}
+.box.i{
+    
+     border-radius: 50px;
+}
+.box.j:hover{
+   
+     border-radius: 50px;
+   
+}
+.box.j{
+   
+     border-radius: 50px;
+}
+
+
+.container5{
+    
+    border-radius: 50px;
+}
+.box.k:hover{
+   
+     border-radius: 50px;
+   
+}
+.box.k{
+    
+     border-radius: 50px;
+    
+}
+.box.l:hover{
+    
+     border-radius: 50px;
+    
+}
+.box.l{
+   
+     border-radius: 50px;
+    
+}
+.box.m:hover{
+   
+     border-radius: 50px;
+    
+}
+.box.m{
+    
+    border-radius: 50px;
+}
+.box.n:hover{
+    
+     border-radius: 50px;
+    
+}
+.box.n{
+    
+     border-radius: 50px;
+}
+.box.o:hover{
+   
+     border-radius: 50px;
+   
+}
+.box.o{
+   
+     border-radius: 50px;
+}
+/*top free */
+
+
+/*help boxes*/
+.container6{
+   border-radius: 50px;
+    
+}
+.container6 .boxx{
+    border-radius: 50px;
+}
+.container6 .boxx .icon{
+    border-radius: 50px;
+}
+/*help boxes*/
+
+
+
+
+
+/* mega sales*/
+.box.p:hover{
+   
+     border-radius: 50px;
+   
+}
+.box.p{
+    
+     border-radius: 50px;
+    
+}
+.box.q:hover{
+    
+     border-radius: 50px;
+    
+}
+.box.q{
+   
+     border-radius: 50px;
+    
+}
+.box.r:hover{
+   
+     border-radius: 50px;
+    
+}
+.box.r{
+    
+    border-radius: 50px;
+}
+.box.s:hover{
+    
+     border-radius: 50px;
+    
+}
+.box.s{
+    
+     border-radius: 50px;
+}
+.box.t:hover{
+   
+     border-radius: 50px;
+   
+}
+.box.t{
+   
+     border-radius: 50px;
+}
+.box.u:hover{
+   
+     border-radius: 50px;
+   
+}
+.box.u{
+    
+     border-radius: 50px;
+    
+}
+.box.v:hover{
+    
+     border-radius: 50px;
+    
+}
+.box.v{
+   
+     border-radius: 50px;
+    
+}
+.box.w:hover{
+   
+     border-radius: 50px;
+    
+}
+.box.w{
+    
+    border-radius: 50px;
+}
+.box.x:hover{
+    
+     border-radius: 50px;
+    
+}
+.box.x{
+    
+     border-radius: 50px;
+}
+.box.y:hover{
+   
+     border-radius: 50px;
+   
+}
+.box.y{
+   
+     border-radius: 50px;
+}
+
+/* FAQ */
+
+.FAQ .accordion_body ul li .li_qus .btn:before
+{
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    transform: rotate(45deg);
+    transition: all ease-in-out 0.5s;
+}
+
+.FAQ .accordion_body ul li .li_qus .btn:after
+{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 15px;
+    height: 15px;
+    background: var(--prime-color);
+    transform: rotate(45deg);
+    transition: all ease-in-out 0.5s;
+}
+
+.FAQ .accordion_body ul li.active .li_qus .btn:after {
+    transform: rotate(45deg);
+    top: 11px;
+}
+
+.FAQ .accordion_body ul li.active .li_qus .btn:before {
+    top: 6px;
+}
+
+/* Multiplayer Games */
+
+.multiplayer .container6 .card .face
+{
+    border-radius: 50px;
+}
+.multiplayer .container5 .card .face
+{
+    border-radius: 50px;
+}
+.multiplayer .container6 .card .face.face2 p{
+    
+    color: black;
+}
+.multiplayer .container5 .card .face.face2 p{
+    
+    color: black;
+}
+
+
+
+
+.multiplayer .slideshow .controls .prev,
+.multiplayer .slideshow .controls .next{
+    border-radius: 25px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 25px;
+}
+
+/* Simulation */
+.simulation .card{
+    border-radius: 50px;
+     box-shadow: 0 20px 50px black;
+}
+
+.simulation .front{
+  border-radius: 50px;
+}
+.simulation .back{
+     border-radius: 50px;
+}
+
+.simulation .maincont .container2 .card .front img{
+     border-radius: 50px;
+    
+}
+
+.simulation .maincont .container3 .card .front img{
+     border-radius: 50px;
+    
+}
