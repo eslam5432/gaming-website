@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" id="theme" href="css/light.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>Search All</title>
+</head>
+
+<body>
+    <!-- The Navbar -->
+    <div class="navbar" id="myNavbar">
+        <div class="logo">
+            <a href="home.html">Gaming <span class="prime-color">Clash</span></a>
+        </div>
+        <a href="home.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="complaints.html">Complaints</a>
+        <a href="#" class="active">Search</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Games
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Horror Games</a>
+                <a href="shootergames.html">Shooter Games</a>
+                <a href="#">RPG Games</a>
+                <a href="survivalgames.html">Survival Games</a>
+                <a href="racinggames.html">Racing Games</a>
+                <a href="multiplayergames.html">Multiplayer Games</a>
+                <a href="simulationgames.html">Simulation Games</a>
+                <a href="zombiegames.html">Zombies Games</a>
+                <a href="#">Strategy Games</a>
+            </div>
+        </div>
+        <a href="login.html">Login</a>
+        <a href="javascript:void(0);" class="theme" id="themebtn" onclick="dark()">
+            <i class="fa fa-paint-brush prime-color"></i>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="navbtn()"><i class="fa fa-bars"></i></a>
+    </div>
+
+    <!-- The Search -->
+    <div class="search">
+        <div class="container" id="gamelist">
+            <div class="searchholder">
+                <input type="text" class="searchbox" placeholder="Search..." id="searchbox"/>
+                <i class="fa fa-search"></i>
+                <br>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>GTA V</h3>
+                    <img src="images/GTAV.png" alt="GTA V">
+                    <p>Shooter</p>
+                    <p class="tag">Grand Theft Auto 5, FPS, First Person, TPS, Third Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Battlefield III</h3>
+                    <img src="images/Battlefield 3.png" alt="Battlefield 3">
+                    <p>Shooter</p>
+                    <p class="tag">BF 3 , BF III, FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Battlefield 4</h3>
+                    <img src="images/Battlefield 4.jpg" alt="Battlefield 4">
+                    <p>Shooter</p>
+                    <p class="tag">BF 4 , BF IV, FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Battlefield V</h3>
+                    <img src="images/Battlefield v.jpg" alt="Battlefield V">
+                    <p>Shooter</p>
+                    <p class="tag">BF V , BF 5, FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Battlefield 1</h3>
+                    <img src="images/Battlefield 1.png" alt="Battlefield 1">
+                    <p>Shooter</p>
+                    <p class="tag">BF 1 , BF I, FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Arma 3</h3>
+                    <img src="images/Arma 3.jpg" alt="Arma 3">
+                    <p>Shooter</p>
+                    <p class="tag">Arma III, FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Fortnite</h3>
+                    <img src="images/fortnite.png" alt="Fortnite">
+                    <p>Multiplayer</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Destiny 2</h3>
+                    <img src="images/destiny2.jpg" alt="Destiny 2">
+                    <p>Multiplayer</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Apex Legends</h3>
+                    <img src="images/apex.jpg" alt="Apex Legends">
+                    <p>Multiplayer</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Rocket League</h3>
+                    <img src="images/rocketleague.jpg" alt="Rocket League">
+                    <p>Multiplayer</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>PUBG</h3>
+                    <img src="images/pubg.jpg" alt="PUBG">
+                    <p>Multiplayer</p>
+                    <p class="tag">Player Unknown Battle Grounds, Players Unknown Battle Grounds</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Overwatch</h3>
+                    <img src="images/overwatch.png" alt="Overwatch">
+                    <p>Multiplayer</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>The Sims 4</h3>
+                    <img src="images/sims4.jpg" alt="The Sims 4">
+                    <p>Simulation</p>
+                    <p class="tag">Sims 4</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>The Sims 3</h3>
+                    <img src="images/sims3.jpg" alt="The Sims 3">
+                    <p>Simulation</p>
+                    <p class="tag">Sims 3</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Stardew Valley</h3>
+                    <img src="images/stardewvalley.jpg" alt="Stardew Valley">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Euro Truck: Simulator 2</h3>
+                    <img src="images/eurotruck2.jpg" alt="Euro Truck: Simulator 2">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Goat Simulator</h3>
+                    <img src="images/goatsimulator.jpg" alt="Goat Simulator">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Surgeon Simulator</h3>
+                    <img src="images/surgeonsimulator.jpg" alt="Surgeon Simulator">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Spore</h3>
+                    <img src="images/spore.jpg" alt="Spore">
+                    <p>Simulation</p>
+                    <p class="tag">Space, Evolution</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Flight Simulator X</h3>
+                    <img src="images/flight simulator.jpg" alt="Flight Simulator X">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Fallout Shelter</h3>
+                    <img src="images/fallout shelter.png" alt="Fallout Shelter">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Football Manager 2019</h3>
+                    <img src="images/Football Manager 2019.jpg" alt="Football Manager 2019">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Thief Simulator</h3>
+                    <img src="images/Thief Simulator.jpg" alt="Thief Simulator">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Job Simulator</h3>
+                    <img src="images/Job Simulator.jpg" alt="Job Simulator">
+                    <p>Simulation</p>
+                    <p class="tag">VR</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Farming Simulator 19</h3>
+                    <img src="images/Farming Simulator 19.jpg" alt="Farming Simulator 19">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>House Flipper</h3>
+                    <img src="images/House Flipper.jpg" alt="House Flipper">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h4>Car Mechanic Simulator 2018</h4>
+                    <img src="images/Car Mechanic Simulator 2018.jpg" alt="Car Mechanic Simulator 2018">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Game Dev Tycoon</h3>
+                    <img src="images/Game Dev Tycoon.jpg" alt="Game Dev Tycoon">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Papers, Please!</h3>
+                    <img src="images/Papers, Please.png" alt="Papers, Please!">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h4>The Hunter: Call Of The Wild</h4>
+                    <img src="images/The Hunter Call Of The Wild.jpg" alt="The Hunter: Call Of The Wild">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="simulationgames.html">
+                    <h3>Sim City</h3>
+                    <img src="images/simcity.png" alt="Sim City">
+                    <p>Simulation</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>Dying Light</h3>
+                    <img src="images/dyinglight.jpg" alt="Dying Light">
+                    <p>Zombies</p>
+                    <p class="tag">FPS, First Person, Parkour</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>State Of Decay</h3>
+                    <img src="images/stateofdecay.jpg" alt="State Of Decay">
+                    <p>Zombies</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>State Of Decay 2</h3>
+                    <img src="images/stateofdecay2.jpg" alt="State Of Decay 2">
+                    <p>Zombies</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>7 Days To Die</h3>
+                    <img src="images/7daystodie.jpg" alt="7 Days To Die">
+                    <p>Zombies</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Forza Horizon 4</h3>
+                    <img src="images/forzahorizon4.png" alt="Forza Horizon 4">
+                    <p>Racing</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Project Cars 2</h3>
+                    <img src="images/projectcars2.jpg" alt="Project Cars 2">
+                    <p>Racing</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Project Cars</h3>
+                    <img src="images/projectcars.jpg" alt="Project Cars">
+                    <p>Racing</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Dirt Rally</h3>
+                    <img src="images/dirtrally.jpg" alt="Dirt Rally">
+                    <p>Racing</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Dirt Rally 2.0</h3>
+                    <img src="images/dirtrally2.jpeg" alt="Dirt Rally 2">
+                    <p>Racing</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>F1 2019</h3>
+                    <img src="images/f12019.jpeg" alt="F1 2019">
+                    <p>Racing</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Call Of Duty: Black Ops II</h3>
+                    <img src="images/codbo2.jpg" alt="Call Of Duty: Black Ops II">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Call Of Duty: Black Ops III</h3>
+                    <img src="images/codbo3.jpg" alt="Call Of Duty: Black Ops III">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Call Of Duty: Black Ops IV</h3>
+                    <img src="images/codbo4.jpg" alt="Call Of Duty: Black Ops IV">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Spec Ops: The Line</h3>
+                    <img src="images/specops.jpg" alt="Spec Ops: The Line">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Sniper Elite 4</h3>
+                    <img src="images/sniperelite4.jpg" alt="Sniper Elite 4">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Farcry 3</h3>
+                    <img src="images/Farcry 3.jpg" alt="Farcry 3">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Farcry 4</h3>
+                    <img src="images/Farcry 4.jpg" alt="Farcry 4">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Farcry 5</h3>
+                    <img src="images/Farcry 5.jpg" alt="Farcry 5">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Saintsrow: The Third</h3>
+                    <img src="images/Saintsrow The Third.jpg" alt="Saintsrow: The Third">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person, Saintsrow 3</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Saintsrow IV</h3>
+                    <img src="images/Saintsrow 4.jpg" alt="Saintsrow IV">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person, Saintsrow 4</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Just Cause 2</h3>
+                    <img src="images/Just Cause 2.jpg" alt="Just Cause 2">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person, Just Cause II</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>Just Cause 3</h3>
+                    <img src="images/Just Cause 3.png" alt="Just Cause 3">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person, Just Cause III</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="shootergames.html">
+                    <h3>DOOM: Eternal</h3>
+                    <img src="images/DOOM Eternal.jpg" alt="DOOM: Eternal">
+                    <p>Shooter</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h5>The Elder Scrolls III: Morrowwind</h5>
+                    <img src="images/theelderscrolls3.jpg" alt="The Elder Scrolls III: Morrowwind">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h4>The Elder Scrolls IV: Oblivion</h4>
+                    <img src="images/theelderscrolls4.png" alt="The Elder Scrolls IV: Oblivion">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h4>The Elder Scrolls V: Skyrim</h4>
+                    <img src="images/theelderscrolls5.jpg" alt="The Elder Scrolls V: Skyrim">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h4>Castlevania: Lords Of Shadow 2</h4>
+                    <img src="images/castlevania2.jpg" alt="Castlevania: Lords Of Shadow 2">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>The Witcher 3: Wild Hunt</h3>
+                    <img src="images/The Witcher 3.jpg" alt="The Witcher 3">
+                    <p>RPG</p>
+                    <p class="tag">The Witcher III, Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Fable Anniversary</h3>
+                    <img src="images/Fable Anniversary.jpg" alt="Fable Anniversary">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Diablo III</h3>
+                    <img src="images/Diablo III.jpg" alt="Diablo III">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games, Diablo 3</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Undertale</h3>
+                    <img src="images/Undertale.png" alt="Undertale">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Bloodborne</h3>
+                    <img src="images/Bloodborne.jpg" alt="Bloodborne">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Dark Souls: Remastered</h3>
+                    <img src="images/Darksouls.jpg" alt="Dark Souls: Remastered">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Dark Souls 2</h3>
+                    <img src="images/Darksouls 2.jpg" alt="Dark Souls 2">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games, Dark souls II</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Dark Souls 3</h3>
+                    <img src="images/Darksouls 3.jpg" alt="Dark Souls 3">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games, Dark souls III</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Monster Hunter: World</h3>
+                    <img src="images/Monster Hunter World.jpg" alt="Monster Hunter: World">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Fallout 4</h3>
+                    <img src="images/Fallout IV.jpg" alt="Fallout 4">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games, Fallout IV</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Fallout 3</h3>
+                    <img src="images/Fallout 3.jpg" alt="Fallout 3">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games, Fallout III</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Dragon Age: Origins</h3>
+                    <img src="images/Dragon Age Origins.jpg" alt="Dragon Age: Origins">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Dragon Age 2</h3>
+                    <img src="images/Dragon Age 2.jpg" alt="Dragon Age 2">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Dragon Age: Inquisition</h3>
+                    <img src="images/Dragon Age Inquisition.png" alt="Dragon Age: Inquisition">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h5>The Legend Of Zelda: Wild Breath</h5>
+                    <img src="images/The Legend Of Zelda Wild Breath.png" alt="The Legend Of Zelda: Wild Breath">
+                    <p>RPG</p>
+                    <p class="tag">Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Outlast</h3>
+                    <img src="images/outlast.jpg" alt="Outlast">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Outlast 2</h3>
+                    <img src="images/outlast2.jpg" alt="Outlast 2">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Slenderman: The Arrival</h3>
+                    <img src="images/slenderman.jpg" alt="Slenderman: The Arrival">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Amnesia</h3>
+                    <img src="images/amnesia.jpeg" alt="Amnesia">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>The Evil Within</h3>
+                    <img src="images/theevilwithin.jpg" alt="The Evil Within">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>The Evil Within 2</h3>
+                    <img src="images/theevilwithin2.jpg" alt="The Evil Within 2">
+                    <p>Horror</p>
+                    <p class="tag">Evil within II</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Limbo</h3>
+                    <img src="images/limbo.jpg" alt="Limbo">
+                    <p>Horror</p>
+                    <p class="tag">Platformer</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Dead By Daylight</h3>
+                    <img src="images/dead by daylight.jpg" alt="Dead By Daylight">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Little Nightmare</h3>
+                    <img src="images/little nightmares.png" alt="Little Nightmare">
+                    <p>Horror</p>
+                    <p class="tag">Platfromer</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Resident Evil 7: Biohazard</h3>
+                    <img src="images/resident evil 7.jpg" alt="Resident Evil 7: Biohazard">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Five Nights At Freddy's</h3>
+                    <img src="images/five nights at freddy.jpg" alt="Five Nights At Freddy's">
+                    <p>Horror</p>
+                    <p class="tag">FNAF</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>SOMA</h3>
+                    <img src="images/soma.jpg" alt="SOMA">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Layers Of Fear</h3>
+                    <img src="images/Layers Of Fear.jpeg" alt="Layers Of Fear">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Layers Of Fear 2</h3>
+                    <img src="images/Layers Of Fear 2.jpg" alt="Layers Of Fear 2">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Kholat</h3>
+                    <img src="images/kholat.jpg" alt="Kholat">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Among The Sleep</h3>
+                    <img src="images/Among The Sleep.jpg" alt="Among The Sleep">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Resident Evil 5</h3>
+                    <img src="images/Resident Evil 5.jpg" alt="Resident Evil 5">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>F.E.A.R</h3>
+                    <img src="images/fear.jpg" alt="F.E.A.R">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>F.E.A.R 2</h3>
+                    <img src="images/fear2.jpg" alt="F.E.A.R 2">
+                    <p>Horror</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Minecraft</h3>
+                    <img src="images/Minecraft.jpg" alt="Minecraft">
+                    <p>Survival</p>
+                    <p class="tag">Crafting, Adventure</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Terraria</h3>
+                    <img src="images/Terraria.jpg" alt="Terraria">
+                    <p>Survival</p>
+                    <p class="tag">Crafting, Adventure, Platformer</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>ARK: Survival Evolved</h3>
+                    <img src="images/ark.jpg" alt="ARK: Survival Evolved">
+                    <p>Survival</p>
+                    <p class="tag">Dinosours, Crafting, Adventure</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Day Z</h3>
+                    <img src="images/dayz.jpeg" alt="Day Z">
+                    <p>Survival</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>The Forest</h3>
+                    <img src="images/theforest.jpg" alt="The Forest">
+                    <p>Survival</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Don't Starve</h3>
+                    <img src="images/dontstarve.jpg" alt="Don't Starve">
+                    <p>Survival</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Rust</h3>
+                    <img src="images/rust.jpg" alt="Rust">
+                    <p>Survival</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Subnautica</h3>
+                    <img src="images/subnautica.jpeg" alt="Subnautica">
+                    <p>Survival</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Frost Punk</h3>
+                    <img src="images/frostpunk.jpg" alt="Frost Punk">
+                    <p>Survival</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Endless Legend</h3>
+                    <img src="images/endlesslegend.jpeg" alt="Endless Legend">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Sid Meier's Civilization VI</h3>
+                    <img src="images/Sid Meier's Civilization VI.jpg" alt="Sid Meier's Civilization VI">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Sid Meier's Civilization V</h3>
+                    <img src="images/Sid Meier's Civilization V.jpg" alt="Sid Meier's Civilization V">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h5>Age Of Empires II: Definitive Edition</h5>
+                    <img src="images/AgeOfEmpires2.jpg" alt="Age Of Empires II: Definitive Edition">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Total War: Warhammer</h3>
+                    <img src="images/TotalWarWarhammer.jpg" alt="Total War: Warhammer">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Total War: Warhammer 2</h3>
+                    <img src="images/TotalWarWarhammer2.jpg" alt="Total War: Warhammer 2">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Total War: Rome II</h3>
+                    <img src="images/Total WarRome2.jpeg" alt="Total War: Rome II">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h4>World Of Warcraft 3: Reforged</h4>
+                    <img src="images/wow3.jpeg" alt="World Of Warcraft 3: Reforged">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Cities: Skylines</h3>
+                    <img src="images/CitiesSkylines.jpg" alt="Cities: Skylines">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>XCOM 2</h3>
+                    <img src="images/XCOM 2.jpg" alt="XCOM 2">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Crusader Kings II</h3>
+                    <img src="images/Crusader Kings II.jpg" alt="Crusader Kings II">
+                    <p>Strategy</p>
+                    <p class="tag">Crusader Kings 2</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Crusader Kings III</h3>
+                    <img src="images/Crusader Kings III.jpg" alt="Crusader Kings III">
+                    <p>Strategy</p>
+                    <p class="tag">Crusader Kings 3</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Surviving Mars</h3>
+                    <img src="images/Surviving Mars.jpg" alt="Surviving Mars">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Anno 1800</h3>
+                    <img src="images/Anno 1800.jpg" alt="Anno 1800">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Stellaris</h3>
+                    <img src="images/Stellaris.jpg" alt="Stellaris">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Age of Wonders: Planetfall</h3>
+                    <img src="images/Age of Wonders Planetfall.jpg" alt="Age of Wonders: Planetfall">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h3>Mount & Blade: Warband</h3>
+                    <img src="images/Mount and Blade Warband.jpg" alt="Mount & Blade: Warband">
+                    <p>Strategy</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h4>Mount & Blade 2: Banner Lords</h4>
+                    <img src="images/Mount and Blade 2.jpg" alt="Mount & Blade 2: Banner Lords">
+                    <p>Strategy</p>
+                    <p class="tag">
+                        Mount & Blade II: Banner Lords,
+                        Mount and Blade 2: Banner Lords,
+                        Mount and Blade II: Banner Lords
+                    </p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="#">
+                    <h5>Command & Conquer: Red Alert 3</h5>
+                    <img src="images/Command and Conquer Red Alert 3.jpg" alt="Command & Conquer: Red Alert 3">
+                    <p>Strategy</p>
+                    <p class="tag">
+                        Command & Conquer: Red Alert III,
+                        Command and Conquer: Red Alert 3,
+                        Command and Conquer: Red Alert III
+                    </p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>League Of Legends</h3>
+                    <img src="images/lol.jpg" alt="League Of Legends">
+                    <p>Multiplayer</p>
+                    <p class="tag">LOL , MOBA</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>DOTA 2</h3>
+                    <img src="images/Dota 2.jpg" alt="DOTA 2">
+                    <p>Multiplayer</p>
+                    <p class="tag">MOBA</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h4>Counter Strike: Global Offensive</h4>
+                    <img src="images/csgo.jpg" alt="Counter Strike: Global Offensive">
+                    <p>Multiplayer</p>
+                    <p class="tag">FPS, First Person, CS:GO, CSGO, CS GO</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Rainbow Six Siege</h3>
+                    <img src="images/rainbow6.jpg" alt="Rainbow Six Siege">
+                    <p>Multiplayer</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Warframe</h3>
+                    <img src="images/Warframe.jpg" alt="Warframe">
+                    <p>Multiplayer</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Paladins</h3>
+                    <img src="images/paladins.jpg" alt="Paladins">
+                    <p>Multiplayer</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Brawlhalla</h3>
+                    <img src="images/Brawlhalla.jpg" alt="Brawlhalla">
+                    <p>Multiplayer</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>The Elder Scrolls: Online</h3>
+                    <img src="images/theelderscrollsonline.jpg" alt="The Elder Scrolls: Online">
+                    <p>Multiplayer</p>
+                    <p class="tag">RPG , Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Black Desert</h3>
+                    <img src="images/blackdesert.jpg" alt="Black Desert">
+                    <p>Multiplayer</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Smite</h3>
+                    <img src="images/smite.png" alt="Smite">
+                    <p>Multiplayer</p>
+                    <p class="tag">MOBA</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Albion Online</h3>
+                    <img src="images/Albion Online.jpg" alt="Albion Online">
+                    <p>Multiplayer</p>
+                    <p class="tag">RPG , Role Playing Games</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Valorant</h3>
+                    <img src="images/valorant.jpg" alt="Valorant">
+                    <p>Multiplayer</p>
+                    <p class="tag">Shooting, Shooter, FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="multiplayergames.html">
+                    <h3>Eve Online</h3>
+                    <img src="images/eve.jpg" alt="Eve Online">
+                    <p>Multiplayer</p>
+                    <p class="tag">Space</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>Left 4 Dead</h3>
+                    <img src="images/left4dead.jpg" alt="Left 4 Dead">
+                    <p>Zombies</p>
+                    <p class="tag">FPS, First Person, CO-OP</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>Left 4 Dead 2</h3>
+                    <img src="images/left4dead2.jpg" alt="Left 4 Dead 2">
+                    <p>Zombies</p>
+                    <p class="tag">FPS, First Person, CO-OP</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>Zombi</h3>
+                    <img src="images/zombi.jpg" alt="Zombi">
+                    <p>Zombies</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h4>Sniper Elite: Nazi Zombie Army</h4>
+                    <img src="images/SniperEliteNaziZombieArmy.jpg" alt="Sniper Elite: Nazi Zombie Army">
+                    <p>Zombies</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>Killing Floor 2</h3>
+                    <img src="images/killingfloor2.jpeg" alt="Killing Floor 2">
+                    <p>Zombies</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>The Walking Dead</h3>
+                    <img src="images/thewalkingdead.jpeg" alt="The Walking Dead">
+                    <p>Zombies</p>
+                    <p class="tag">Tell Tale</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>The Walking Dead 2</h3>
+                    <img src="images/The Walking Dead 2.jpg" alt="The Walking Dead 2">
+                    <p>Zombies</p>
+                    <p class="tag">Tell Tale</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>Dead Island</h3>
+                    <img src="images/Dead Island.jpg" alt="Dead Island">
+                    <p>Zombies</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>Project Zomboid</h3>
+                    <img src="images/projectzomboid.jpg" alt="Project Zomboid">
+                    <p>Zombies</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>Dead Rising</h3>
+                    <img src="images/deadrising.jpg" alt="Dead Rising">
+                    <p>Zombies</p>
+                    <p class="tag">TPS, Third Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>Dead Rising 2</h3>
+                    <img src="images/Dead Rising 2.jpg" alt="Dead Rising 2">
+                    <p>Zombies</p>
+                    <p class="tag">TPS, Third Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>Dead Rising 3</h3>
+                    <img src="images/Dead Rising 3.jpg" alt="Dead Rising 3">
+                    <p>Zombies</p>
+                    <p class="tag">TPS, Third Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>Dead Rising 4</h3>
+                    <img src="images/Dead Rising 4.jpg" alt="Dead Rising 4">
+                    <p>Zombies</p>
+                    <p class="tag">TPS, Third Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>How To Survive</h3>
+                    <img src="images/How To Survive.jpg" alt="How To Survive">
+                    <p>Zombies</p>
+                    <p class="tag">TPS, Third Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="zombiegames.html">
+                    <h3>How To Survive 2</h3>
+                    <img src="images/How To Survive 2.jpg" alt="How To Survive 2">
+                    <p>Zombies</p>
+                    <p class="tag">TPS, Third Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Team Sonic Racing</h3>
+                    <img src="images/Team Sonic Racing.jpeg" alt="Team Sonic Racing">
+                    <p>Racing</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Need For Speed: Heat</h3>
+                    <img src="images/nfs heat.jpeg" alt="Need For Speed: Heat">
+                    <p>Racing</p>
+                    <p class="tag">NFS H</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h4>Need For Speed: Most Wanted</h4>
+                    <img src="images/nfs mw.jpg" alt="Need For Speed: Most Wanted">
+                    <p>Racing</p>
+                    <p class="tag">NFS MW</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Need For Speed: The Run</h3>
+                    <img src="images/nfs therun.jpg" alt="Need For Speed: The Run">
+                    <p>Racing</p>
+                    <p class="tag">NFS TR</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Need For Speed: Rivals</h3>
+                    <img src="images/nfs rivals.jpg" alt="Need For Speed: Rivals">
+                    <p>Racing</p>
+                    <p class="tag">NFS R</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h4>Need For Speed: Hot Pursuit</h4>
+                    <img src="images/nfs hotpursuit.jpg" alt="Need For Speed: Hot Pursuit">
+                    <p>Racing</p>
+                    <p class="tag">NFS HP</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Need For Speed: Payback</h3>
+                    <img src="images/nfs payback.png" alt="Need For Speed: Payback">
+                    <p>Racing</p>
+                    <p class="tag">NFS PB</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Split Second: Velocity</h3>
+                    <img src="images/Split Second Velocity.jpg" alt="Split Second: Velocity">
+                    <p>Racing</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Driver: San Francisco</h3>
+                    <img src="images/driver san francisco.jpg" alt="Driver: San Francisco">
+                    <p>Racing</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Dirt 3</h3>
+                    <img src="images/Dirt 3.jpg" alt="Dirt 3">
+                    <p>Racing</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>Dirt 4</h3>
+                    <img src="images/dirt 4.jpeg" alt="Dirt 4">
+                    <p>Racing</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="racinggames.html">
+                    <h3>GRID 2</h3>
+                    <img src="images/grid 2.jpg" alt="GRID 2">
+                    <p>Racing</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>This War Of Mine</h3>
+                    <img src="images/This War Of Mine.jpg" alt="This War Of Mine">
+                    <p>Survival</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Oxygene Not Included</h3>
+                    <img src="images/Oxygen Not Included.jpg" alt="Oxygene Not Included">
+                    <p>Survival</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>The Long Dark</h3>
+                    <img src="images/the long dark.jpg" alt="The Long Dark">
+                    <p>Survival</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Farcry Primal</h3>
+                    <img src="images/farcry primal.webp" alt="Farcry Primal">
+                    <p>Survival</p>
+                    <p class="tag">FPS, First Person</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>No Man's Sky</h3>
+                    <img src="images/no mans sky.jpg" alt="No Man's Sky">
+                    <p>Survival</p>
+                    <p class="tag">Space</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Stranded Deep</h3>
+                    <img src="images/stranded deep.jpg" alt="Stranded Deep">
+                    <p>Survival</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Astroneer</h3>
+                    <img src="images/astroneer.jpg" alt="Astroneer">
+                    <p>Survival</p>
+                    <p class="tag">Space</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Green Hell</h3>
+                    <img src="images/Green Hell.jpg" alt="Green Hell">
+                    <p>Survival</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Metro Exodus</h3>
+                    <img src="images/Metro Exodus.jpeg" alt="Metro Exodus">
+                    <p>Survival</p>
+                </a>
+            </div>
+            <div class="gamebox">
+                <a href="survivalgames.html">
+                    <h3>Conan Exiles</h3>
+                    <img src="images/conan exiles.webp" alt="Conan Exiles">
+                    <p>Survival</p>
+                </a>
+            </div>
+        </div>        
+    </div>
+
+    <!-- The Footer -->
+    <div class="footer">
+        <div class="container">
+            <p>Copyrights reserved GamingClash &copy; 2020</p>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
